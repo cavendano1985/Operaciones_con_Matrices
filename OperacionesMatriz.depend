@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1505394715 source:c:\users\user\desktop\operacionesmatriz\main.cpp
+	<iostream>
+	"matrix.h"
+	"matrix.cpp"
+
+1505395900 c:\users\user\desktop\operacionesmatriz\matrix.h
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
+1505395900 source:c:\users\user\desktop\operacionesmatriz\matrix.cpp
+	"matrix.h"
+
+1505395900 c:\users\user\desktop\operacionesmatriz\matrix.cpp
+	"matrix.h"
+
