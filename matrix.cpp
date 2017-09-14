@@ -66,7 +66,7 @@ matrix<T> matrix<T>::operator* (const matrix &matrix_2){
     for (int i = 0; i < m_fil; i++) {
         for (int j = 0; j < matrix_2.m_col; j++) {
             for (int k = 0; k < m_col; k++) {
-                total += (m_matrix[i][k] * matrix_2.m_matrix[k][j]);
+                total = total + (m_matrix[i][k] * matrix_2.m_matrix[k][j]);
             }
             matrix_result.m_matrix[i][j] = total;
 
@@ -116,8 +116,6 @@ void matrix<T>::entrada_por_usuario()
         }
         cout << endl;
     }
-    m_max = m_matrix[0][0];
-    m_min = m_matrix[0][0];
 }
 
 // Llenar aleatoriamente una Matriz
@@ -130,7 +128,4 @@ void matrix<T>::entrada_aleatoria()
             m_matrix[i][j] = rand() % 30;
         }
     }
-
-    m_max = m_matrix[0][0];
-    m_min = m_matrix[0][0];
 }
